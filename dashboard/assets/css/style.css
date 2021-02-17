@@ -82,10 +82,6 @@ body {
     align-items: center;
 }
 
-#searchInput input {
-
-}
-
 #searchBtn .btn {
     margin-top: -1px;
     max-height: 16px;
@@ -117,4 +113,8 @@ body {
 
 #commandError {
     color: var(--textColor);
+}
+
+.round {
+  border-radius: 50%;
 }

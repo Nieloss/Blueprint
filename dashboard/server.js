@@ -15,6 +15,7 @@
     // Require routes
     const authRoutes = require('../dashboard/routes/auth-routes');
     const rootRoutes = require('../dashboard/routes/root-routes');
+    const dashboardRoutes = require('../dashboard/routes/dashboard-routes');
 
 
     // env
@@ -51,6 +52,8 @@
         middleware.updateUser,
         rootRoutes,
         authRoutes);
+
+    app.use('/dashboard', middleware.validateUser, dashboardRoutes)    
 
 
     app.get('*', (req, res) => res.render('errors/404.pug', {
