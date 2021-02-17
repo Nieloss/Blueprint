@@ -1,0 +1,37 @@
+include includes/mixins
+
+doctype html
+html(lang="en")
+    head
+        include includes/head
+        script(src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js', defer)
+        script(src='/js/custom.js', defer)
+        script(defer).
+            let commands = !{commandsString};
+    body
+        include includes/navbar
+        .container
+            div.bp-jumbotron.bp-jumbotron-commands.p-5.text-center.text-light
+                h1.display-3 Commands
+                p.lead View the commands for Blueprint
+                br
+            section#commands
+                #search.row
+                    .col-sm-3
+                    .col-sm-8
+                        #searchInput.form-group.p-3
+                            input.form-control(type='search')
+                    .col-sm-1
+                        #searchBtn
+                            button.btn
+                                i.fas.fa-search
+                .row
+                    .col-sm-3.categories
+                        ul.list-group.mb-2
+                            each category in categories
+                                +category(category)
+                    .col-sm-9.commands
+                        ul.list-group.mb-2
+                            each command in commands
+                                +command(command)
+                            p#commandError

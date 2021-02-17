@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.5.0.22-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="705.478pt" height="226.404pt" viewBox="69.101 -307.358 705.478 226.404">
+ <defs>
+	</defs>
+ <g id="Layer 1" transform="scale(1 -1)">
+  <g id="Group" stroke-linejoin="miter">
+   <g id="Group_1" stroke="none" stroke-width="1.145">
+    <path d="M 69.101,80.954 L 69.101,261.89 L 151.601,307.358 L 152.539,128.297 L 69.101,80.954 Z" fill="#84dbff" marker-start="none" marker-end="none"/>
+    <path d="M 229.867,260.608 L 229.412,80.954 L 152.539,128.297 L 151.601,307.358 L 229.867,260.608 Z" fill="#54bfeb" marker-start="none" marker-end="none"/>
+    <path d="M 317.872,302.203 L 318.622,123.328 L 229.412,80.954 L 229.867,260.608 L 317.872,302.203 Z" fill="#84dbff" marker-start="none" marker-end="none"/>
+   </g>
+   <path d="M 151.694,289.718 L 87.042,252.277 L 86.808,107.669 L 152.452,145.169" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 137.433,170.715 L 137.393,136.567" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 229.455,98.059 L 152.45,145.401" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 186.16,181.823 L 184.861,125.476" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 186.16,181.823 L 229.602,155.947 L 299.971,188.948" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 229.455,98.059 L 300.534,132.698" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 242.724,162.101 L 243.401,104.855" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 300.909,277.26 L 300.534,132.698" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 273.909,206.197 L 300.113,218.761" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 229.823,243.133 L 300.909,277.26" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 151.694,289.718 L 229.823,243.133" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 172.612,277.246 L 171.91,220.072 L 229.676,185.01" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 246.217,191.909 L 229.676,185.01" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 137.125,281.281 L 137.433,248.293" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 86.928,181.203 L 137.379,209.208" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 137.261,217.645 L 137.613,201.473" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+   <path d="M 245.54,250.194 L 245.891,220.51 L 246.217,192.948" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="4"/>
+  </g>
+  <text xml:space="preserve" transform="translate(368.242 168.809) scale(1 -1)" kerning="auto" font-family="Segoe UI Black" font-size="72" fill="#ffffff" stroke="none" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"><tspan x="0" y="0">BLUEPRINT</tspan></text>
+ </g>
+</svg>

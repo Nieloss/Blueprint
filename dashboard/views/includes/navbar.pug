@@ -1,0 +1,17 @@
+nav.navbar.navbar-expand-lg.navbar-dark
+    .container-fluid
+        a.navbar-brand(href='/')
+            img(src='/img/bp-logo-text.svg', title='Blueprint', alt='Blueprint')
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbar.collapse.navbar-collapse.text-light
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                li.nav-item
+                    a.nav-link(href='/commands')
+                        i.fas.fa-terminal
+                        span.p-2 Commands
+            ul.navbar-nav.ml-auto
+                li.nav-item
+                    a.nav-link(href='/login')
+                        i.fas.fa-sign-in-alt
+                        span.p-2 Login

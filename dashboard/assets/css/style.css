@@ -1,0 +1,120 @@
+:root {
+    /* Huisstijl */
+    --headingsFont: "Lato", sans-serif;
+    --headingsFontWeight: 700;
+    --textFont: "Open Sans", sans-serif;
+
+    --backgroundColor: #192730;
+    --lightBlue: #84dbff;
+    --darkBlue: #54bfeb;
+    --textColor: #ffffff;
+
+    --transitions: .2s ease;
+}
+
+body {
+    background: var(--backgroundColor);
+}
+
+.container-fluid {
+    max-width: 80%;
+}
+
+
+/* Navbar */
+.navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar .navbar-nav {
+    margin-left: 30px !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: var(--headingsFont);
+    font-weight: var(--headingsFontWeight);
+    color: var(--textColor);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--lightBlue);
+}
+
+.navbar .navbar-nav .nav-link svg {
+    color: var(--lightBlue) !important;
+}
+/* End Navbar*/
+
+/* Jumbotron */
+.bp-jumbotron-index {
+    padding: 20px 20px;
+    margin-top: 25vh;
+}
+
+.bp-jumbotron-commands {
+    padding: 20px 20px;
+    margin-top: 5vh;
+}
+
+.bp-jumbotron h1 {
+    font-family: var(--headingsFont);
+    font-weight: var(--headingsFontWeight);
+}
+
+.bp-jumbotron .btn {
+    margin-top: 50px;
+    padding: 8px 30px;
+    font-family: var(--headingsFont);
+    font-weight: var(--headingsFontWeight);
+    background: var(--lightBlue);
+    box-shadow: 0 4px 0 var(--darkBlue);
+    transition: all var(--transitions);
+}
+
+.bp-jumbotron .btn:hover {
+    box-shadow: none;
+    transform: translate(0, 4px);
+}
+/* End Jumbotron */
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput input {
+
+}
+
+#searchBtn .btn {
+    margin-top: -1px;
+    max-height: 16px;
+    max-width: 16px;
+    padding: 16px 32px;
+    font-family: var(--headingsFont);
+    font-weight: var(--headingsFontWeight);
+    background: var(--lightBlue);
+    box-shadow: 0 4px 0 var(--darkBlue);
+    transition: all var(--transitions);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBtn .btn:hover {
+    box-shadow: none;
+    transform: translate(0, 4px);
+}
+
+.categories li {
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--darkBlue) !important;
+    border-color: var(--darkBlue) !important;
+}
+
+#commandError {
+    color: var(--textColor);
+}
