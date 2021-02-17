@@ -1,4 +1,17 @@
 const authClient = require('./auth-client');
+const { client } = require("../index.js");
+
+module.exports.updateGuilds = async (req, res, next) => {
+    try {
+        const key = res.cookies.get('key');
+        if(key) {
+          const authGuilds = await authClient.getGuilds(key);
+          res.locals.guilds = getManageAbleGuilds(authGuilds)  
+        }
+    } finally {
+        next();
+    }
+}
 
 module.exports.updateUser = async (req, res, next) => {
     try {
@@ -16,4 +29,20 @@ module.exports.validateUser = async (req, res, next) => {
     ? next()
     : res.render('errors/401.pug')
 
+}
+
+function getManageAbleGuilds(authGuilds) {
+  const guilds = [];
+
+  for(const id of authGuilds.keys()) {
+    const isManager = authGuilds.get(id).permissions.includes('MANAGE_GUILD');
+
+    const guild = client.guilds.cache.get(id);
+
+    if(!guild || !isManager) continue;
+
+    guilds.push(guild);
+  }
+
+  return guilds;
 }

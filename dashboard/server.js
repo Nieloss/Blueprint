@@ -49,11 +49,10 @@
 
 
     app.use('/',
-        middleware.updateUser,
-        rootRoutes,
-        authRoutes);
-
-    app.use('/dashboard', middleware.validateUser, dashboardRoutes)    
+        middleware.updateUser, rootRoutes,
+        authRoutes,
+        middleware.validateUser, middleware.updateGuilds, dashboardRoutes
+        );    
 
 
     app.get('*', (req, res) => res.render('errors/404.pug', {
