@@ -2,8 +2,16 @@ doctype html
 html(lang="en")
     head
       include ../includes/head
+      script(src='/js/sidebar.js', defer)
     body
       include ../includes/sidebar.pug
+
+      #sidebarExtension
+        header.text-center.pt-4
+          .large-icon.round
+            img.round(src=user.avatarUrl(128), alt=user.username)
+          h4.pt-2.text-light #{user.tag}  
+
       include ../includes/navbar
       div.bp-jumbotron.bp-jumbotron-index.p-5.text-center.text-light
         h1.display-3 BLUEPRINT || Dashboard

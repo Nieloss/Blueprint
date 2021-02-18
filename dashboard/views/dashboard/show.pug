@@ -2,8 +2,26 @@ doctype html
 html(lang="en")
     head
         include ../includes/head
+
+        script(src='/js/sidebar.js', defer)
     body
         include ../includes/sidebar.pug
+
+        #sidebarExtension
+          header.text-center.pt-4
+            .large-icon.bg-dark.round
+              if guild.icon
+                img.round(src=guild.iconURL({dynamic: true, size: 128}), alt=guild.name)
+              else
+                p.abbr.text-white #{guild.nameAcronym}
+            h4.text-white #{guild.name} 
+          .tabs.navbar-nav
+            .category.text-white Modules
+            a(href='#') #[i.fas.fa-gavel] Auto-mod  
+            a(href='#') #[i.fas.fa-coins] Economy
+            a(href='#') #[i.fas.fa-star] General
+            a(href='#') #[i.fas.fa-music] Music     
+
         include ../includes/navbar
         div.container.bp-jumbotron.bp-jumbotron-index.p-5.text-center.text-light
           h1.display-3 #{guild.name}

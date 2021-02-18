@@ -46,3 +46,7 @@
                 ? 'Nothing to see here.'
                 : '');
     }
+
+    $('.hamburger').on('click', function() {
+      $('#sidebarExtension').toggleClass('closed');
+    });

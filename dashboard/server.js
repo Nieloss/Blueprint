@@ -9,7 +9,7 @@
 
 
     // Require middleware
-    const middleware = require('./middleware');
+    const middleware = require('./modules/middleware');
 
 
     // Require routes
